@@ -1,0 +1,258 @@
+body
+{
+	background: #eee;
+	color: #262626;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 30px;
+}
+
+header
+{
+	background: #262626;
+	border-bottom: 3px solid #111;
+	color: #81b71a;
+	padding: 25px 0px;
+	text-transform: uppercase;
+}
+
+header a,
+header a:hover
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+#sharingPanel
+{
+	padding: 25px;
+}
+#sharingPanel #shareLink,
+#sharingPanel #shareFacebook,
+#sharingPanel #shareTwitter
+{
+	display: inline-block;
+	margin-bottom: 10px !important;
+}
+
+#howItWorks
+{
+	background: none;
+	border: none;
+	color: #999;
+	display: inline-block;
+	margin: 10px 0px;
+}
+
+#btnPanel
+{
+	margin-top: 75px;
+}
+
+#btnPanel form,
+#btnPanel input
+{
+	margin: 0px;
+}
+
+#btnPanel button
+{
+	background: #262626;
+	border: 3px solid #262626;
+	box-shadow: none;
+	color: #81b71a;
+	display: inline-block;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 36px;
+	margin: 25px 0px;
+	padding: 25px 0px;
+	text-shadow: none;
+	width: 100%;
+}
+#btnPanel button:hover
+{
+	background: #81b71a;
+	color: #262626;
+	font-weight: bold;
+}
+
+#joinSessionCode
+{
+	display: none;
+	font-size: 36px;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+#search
+{
+	margin-top: 35px;
+	position: relative;
+}
+#search #spinner
+{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#search input
+{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 32px;
+	min-height: 32px;
+}
+#search #search-clear
+{
+	position: absolute;
+    left: -20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#search-results
+{
+	position: relative;
+}
+#search-results .search-result
+{
+	background: none;
+	border: none;
+	border-bottom: 1px solid #262626;
+	box-shadow: none;
+	color: #262626;
+	display: block;
+	padding: 5px;
+	position: relative;
+	width: 100%;
+}
+#search-results .search-result:hover
+{
+	background: #81b71a;
+	text-decoration: none;
+}
+#search-results .search-result:last-child
+{
+	margin-bottom: 25px;
+}
+
+#playing
+{
+	border: 4px solid #262626;
+	border-radius: 15px;
+	margin-top: 0px;
+	position: relative;
+}
+#playing #progress
+{
+	background-image: url(assets/nowplayingbg.png);
+    height:100%;
+	position: absolute;
+		top: 0px;
+		left: 0px;
+    width: 0px;
+    z-index: -1;
+}
+#playing .elapsed
+{
+	display: none;
+}
+#playing #now-playing
+{
+	color: #262626;
+	display: block;
+	padding: 5px;
+	position: relative;
+}
+#playing #now-playing:hover
+{
+	text-decoration: none;
+}
+
+#queue
+{
+	border: 4px solid #81b71a;
+	border-radius: 15px;
+	margin-top: 0px;
+}
+#queue .queue-item
+{
+	background: none;
+	border: none;
+	border-bottom: 1px solid #262626;
+	box-shadow: none;
+	color: #262626;
+	display: block;
+	padding: 5px 25px 5px 5px;
+	position: relative;
+	width: 100%;
+}
+#queue .queue-item:last-child
+{
+	border: none;
+}
+#queue .queue-item:hover
+{
+	background: #81b71a;
+	text-decoration: none;
+}
+#queue .queue-item .title,
+#playing #now-playing .title,
+#search-results .search-result .title
+{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 5px;
+}
+#queue .queue-item .length,
+#playing #now-playing .length,
+#search-results .search-result .length
+{
+	font-size: 12px;
+	line-height: 12px;
+	position: absolute;
+		top: 10px;
+		right: 10px;
+}
+#queue .queue-item .votes,
+#playing #now-playing .votes
+{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	position: absolute;
+		bottom: 10px;
+		right: 10px;
+}
+#queue .queue-item .remove
+{
+	cursor: pointer;
+	position: absolute;
+		top: 7px;
+		right: -25px;
+}
+#queue .queue-item .artist,
+#queue .queue-item .divider,
+#queue .queue-item .album,
+#playing #now-playing .artist,
+#playing #now-playing .divider,
+#playing #now-playing .album,
+#search-results .search-result .artist,
+#search-results .search-result .divider,
+#search-results .search-result .album
+{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 12px;
+	margin: 5px;
+}
+
+*:focus
+{
+	-moz-appearance: none;
+	outline: none;
+}
